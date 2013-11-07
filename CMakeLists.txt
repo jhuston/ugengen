@@ -1,7 +1,7 @@
 set(SC_PATH "/Users/jeff/src/supercollider/")
 
 cmake_minimum_required (VERSION 2.8)
-project (MyFirstUgen)
+project (UGEN_NAME)
 
 include_directories(${SC_PATH}/include/plugin_interface)
 include_directories(${SC_PATH}/include/common)
@@ -12,4 +12,4 @@ if(APPLE OR WIN32)
   set(CMAKE_SHARED_MODULE_SUFFIX ".scx")
 endif()
 
-add_library(MyFirstUgen MODULE MyFirstUgen.cpp)
+add_library(UGEN_NAME MODULE UGEN_NAME.cpp)
